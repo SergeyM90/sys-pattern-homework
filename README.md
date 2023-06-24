@@ -4,15 +4,25 @@
 
 При решении этого задания были использованы следующие команды:
 su -
+
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
+
 dpkg -i zabbix-release_6.0-4+debian11_all.deb
+
 apt update 
+
 apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts
+
 su - postgres -c 'psql --command "CREATE USER zabbix WITH PASSWORD '\'123456789\'';"'
+
 su - postgres -c 'psql --command "CREATE DATABASE zabbix OWNER zabbix;"'
+
 zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+
 sed -i 's/# DBPassword=/DBPassword=123456789/g' /etc/zabbix/zabbix_server.conf
+
 sudo systemctl restart zabbix-server apache2
+
 sudo systemctl enable zabbix-server apache2
 
 ![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/4456b2f3-1ddb-40dd-991d-dd2e6fdecade)
