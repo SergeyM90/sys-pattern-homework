@@ -2,4 +2,5 @@
 
 ### Задание 1
 
-![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/32793472-2eb2-46c0-beaf-9bef63c63ca6)
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/4456b2f3-1ddb-40dd-991d-dd2e6fdecade)
+
