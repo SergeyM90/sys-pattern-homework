@@ -37,3 +37,10 @@ sudo systemctl enable zabbix-server apache2
 
 ![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/ab8d62f1-58f1-439d-8eb1-fc3c917c6dd1)
 
+### Задание 2
+
+
+
+
+
+
