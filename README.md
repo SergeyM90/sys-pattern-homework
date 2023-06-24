@@ -39,6 +39,9 @@ sudo systemctl enable zabbix-server apache2
 
 ### Задание 2
 
+1 Zabbix agent подключен
+
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/89a4a0f0-c106-4ba5-a40e-38830943e536)
 
 
 
