@@ -39,10 +39,13 @@ sudo systemctl enable zabbix-server apache2
 
 ### Задание 2
 
-1 Zabbix agent подключен
+1 Zabbix agent подключен на 1 машине
 
 ![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/89a4a0f0-c106-4ba5-a40e-38830943e536)
 
+2 Zabbix agent подключен на трех машинах
+
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/b71fbd4a-5fc0-4a1a-afbb-977ae833b6e1)
 
 
 
