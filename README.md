@@ -74,6 +74,8 @@ dpkg -i zabbix-release_6.0-4+debian11_all.deb)
 
 apt update
 
+apt install zabbix-agent
+
 systemctl restart zabbix-agent
 
 systemctl enable zabbix-agent
