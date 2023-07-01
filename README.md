@@ -63,16 +63,25 @@ cat /var/log/zabbix/zabbix_agentd.log
 4. Список использованных команд
 
 sudo apt install postgresql
+
 wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+
 dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+
 (для машины с Debian 11 команда чуть отличалась wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb
+
 dpkg -i zabbix-release_6.0-4+debian11_all.deb)
+
 apt update
+
 systemctl restart zabbix-agent
+
 systemctl enable zabbix-agent
 
 Затем 
+
 sudo nano /etc/zabbix/zabbix_agentd.conf (через Ctrl+w находим строчку Server= и вписываем нужный адрес через запятую)
+
 sudo systemctl restart zabbix-agent
    
 
