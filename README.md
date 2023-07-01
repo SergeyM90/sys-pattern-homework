@@ -57,7 +57,15 @@ cat /var/log/zabbix/zabbix_agentd.log
 
 3. скриншот раздела Monitoring > Latest data
 
-![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/c2ef2ad9-4e06-4977-a4fb-0210c82c16c5)
+По Test Machine 1
+
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/f7909589-251d-499c-bdea-33bb54739938)
+
+
+По Test Machine 2
+
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/2cc6befe-4612-41f6-81de-b76ae524f6ab)
+
 
 4. Список использованных команд
 
