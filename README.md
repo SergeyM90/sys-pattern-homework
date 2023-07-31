@@ -1,20 +1,48 @@
-# Домашнее задание к занятию «Система мониторинга Prometheus» - `Сергей Миронов - SYS-20`
+# Домашнее задание к занятию «10.1 «Keepalived/vrrp»» - `Сергей Миронов - SYS-20`
 
-### Задание 1
-Установите Prometheus.
+###   Задание 1   ###
+Разверните топологию из лекции и выполните установку и настройку сервиса Keepalived.
 
-![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/c430518a-1300-4050-af18-1ff2c19bb168)
+vrrp_instance test {
+
+state "name_mode"
+
+interface "name_interface"
+
+virtual_router_id "number id"
+
+priority "number priority"
+
+advert_int "number advert"
+
+authentication {
+
+auth_type "auth type"
+
+auth_pass "password"
+
+}
+
+unicast_peer {
+
+"ip address host"
+
+}
+
+virtual_ipaddress {
+
+"ip address host" dev "interface" label "interface":vip
+
+}
+
+}
 
 
-
-### Задание 2
-Установите Node Exporter.
-
-![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/12e541de-3b6f-4800-9f89-c07653af4abf)
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/ac1e1996-885c-4936-b9ea-3d474256a0b8)
 
 
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/7282a435-516e-4e47-9130-393c6cc6293e)
 
-###  Задание 3
-Подключите Node Exporter к серверу Prometheus.
 
-![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/d59a656e-2a78-40db-984c-e04c3e345058)
+![image](https://github.com/SergeyM90/sys-pattern-homework/assets/84016375/a2cea478-cdc1-4c51-a30f-ae89951cef67)
+
